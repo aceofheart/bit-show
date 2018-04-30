@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TV Shows</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <div class="fullwidth">
+        <div class="container">
+            <header class="row">
+                <h2 class="col-8">BitShow</h2>
+                <div class="col-4 input">
+                   <input type="search" class="form-control" placeholder="Search" >
+                   <ul class="search-dropdown"></ul>
+                </div>
+            </header>
+        </div>
+
+    
+    </div>
+    <h1>Popular Shows</h1>
+    <section class="container">
+        <div class="row shows-list"></div>
+    </section>
+
+    <footer class="fullwidth">
+        <p>Copyright BitStudent2018</p>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="./ui.js"></script>
+    <script src="./data.js"></script>
+    <script src="./main.js"></script>
+    <script>
+        $(mainModule.initGetShow());
+    </script>
+
+</body>
+
+</html>
