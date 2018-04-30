@@ -2,7 +2,7 @@ const mainModule = ((data, ui) => {
     const initGetShow = () => {
 
         $.get({
-                url: "http://api.tvmaze.com/show"
+                url: "https://api.tvmaze.com/show"
             })
             .done(response => {
                 const shows = data.createShow(response);
@@ -28,7 +28,7 @@ const mainModule = ((data, ui) => {
            
             const $inputValue = $(".form-control").val()
         $.get({
-            url:"http://api.tvmaze.com/search/shows?q=" + $inputValue
+            url:"https://api.tvmaze.com/search/shows?q=" + $inputValue
         })
         .done(response =>{ 
             const searchList = data.createSearchShow(response);
@@ -43,7 +43,7 @@ const mainModule = ((data, ui) => {
         const id = localStorage.getItem("id");
 
         $.get({
-            url: `http://api.tvmaze.com/shows/${id}?embed[]=cast&embed[]=seasons`
+            url: `https://api.tvmaze.com/shows/${id}?embed[]=cast&embed[]=seasons`
         })
         .done(response => {
             const singleShow = data.createSingleShow(response);
